@@ -1,0 +1,27 @@
+{
+  "name": "bsky-ffxiv-labeler",
+  "version": "1.0.0",
+  "description": "rep your ffxiv job",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish-config": "tsx scripts/publish.ts",
+    "catchup": "tsx scripts/catchup.ts",
+    "start": "tsx src/main.ts",
+    "dev": "tsx --watch src/main.ts"
+  },
+  "keywords": [],
+  "author": "Austin Parker <austin@ap2.io> (http://aparker.io)",
+  "license": "MIT",
+  "dependencies": {
+    "@atproto/api": "^0.12.24",
+    "atproto-firehose": "^0.2.2",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11"
+  }
+}
